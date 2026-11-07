@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[47,48)"
+license="Private server add-on (license to be decided by the author)"
+
+[[mods]]
+modId="blackhole"
+version="${version}"
+displayName="Black Hole (Re:AcademyCraft add-on)"
+description='''
+Adds a single massive ability to Re:AcademyCraft: Black Hole. A rendered black hole (custom 3D geometry) that drags
+enemies in, crushes what reaches its event horizon, and collapses in a shockwave.
+'''
+
+[[dependencies.blackhole]]
+modId="academy"
+mandatory=true
+versionRange="[1.5.0,1.6)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.blackhole]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,48)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.blackhole]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"
